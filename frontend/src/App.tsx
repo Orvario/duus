@@ -1,21 +1,14 @@
-import Nav from './components/Nav';
-import Hero from './components/Hero';
-import Story from './components/Story';
-import Menu from './components/Menu';
-import Gallery from './components/Gallery';
-import Reservation from './components/Reservation';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import FullMenuPage from './pages/FullMenuPage';
 
 export default function App() {
   return (
-    <div className="bg-dark text-white">
-      <Nav />
-      <Hero />
-      <Story />
-      <Menu />
-      <Gallery />
-      <Reservation />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/menu" element={<FullMenuPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
