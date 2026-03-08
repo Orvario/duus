@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="border-t border-white/5 py-16 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
         <div>
-          <h3 className="font-serif text-2xl font-bold text-gold mb-4">Kaffi Duus</h3>
+          <img src="/logo.png" alt="Kaffi Duus" className="h-14 mb-4" />
           <p className="text-sm text-white/40 leading-relaxed">
             By the small boat harbor in Keflavík. Fresh seafood, warm atmosphere, and ocean views since 1997.
           </p>
