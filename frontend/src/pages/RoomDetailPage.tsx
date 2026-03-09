@@ -97,7 +97,9 @@ export default function RoomDetailPage() {
               </div>
 
               <a
-                href="mailto:stay@flyershotel.is?subject=Room Booking - {room.name}"
+                href="https://property.godo.is/booking2.php?propid=118726&referer=iframe&invoicee=631409"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full bg-gold hover:bg-gold-light text-dark font-semibold py-3.5 rounded-lg transition-colors text-sm tracking-wide uppercase text-center mb-3"
               >
                 Book Now
