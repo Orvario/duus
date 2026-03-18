@@ -9,3 +9,8 @@
   --color-dark-light: #2A2A2A;
   --color-cream: #FAF7F2;
 }
+
+.font-serif {
+  font-feature-settings: "liga" 1, "clig" 1, "dlig" 1, "kern" 1;
+  font-variant-ligatures: common-ligatures discretionary-ligatures;
+}
