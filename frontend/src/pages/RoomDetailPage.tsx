@@ -92,12 +92,12 @@ export default function RoomDetailPage() {
           <div>
             <div className="sticky top-24 bg-dark-light border border-white/5 rounded-2xl p-6">
               <div className="text-center mb-6">
-                <div className="text-3xl font-serif font-bold text-gold">{room.price}</div>
-                <p className="text-sm text-white/40 mt-1">per night</p>
+                <div className="text-2xl md:text-3xl font-serif font-bold text-gold leading-tight">{room.price}</div>
+                <p className="text-sm text-white/40 mt-1">Select dates in booking for nightly total</p>
               </div>
 
               <a
-                href="https://property.godo.is/booking2.php?propid=118726&referer=iframe&invoicee=631409"
+                href="https://property.godo.is/booking2.php?propid=118726&referer=iframe&invoicee=631409%20"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full bg-gold hover:bg-gold-light text-dark font-semibold py-3.5 rounded-lg transition-colors text-sm tracking-wide uppercase text-center mb-3"
@@ -113,7 +113,8 @@ export default function RoomDetailPage() {
               </a>
 
               <p className="text-xs text-white/30 text-center mt-4 leading-relaxed">
-                Breakfast included. Free cancellation up to 24 hours before check-in.
+                Rates, taxes, and cancellation rules are shown in the booking engine. Cancellations 48 hours or more before check-in
+                are typically free on flexible rates; non-refundable rates have separate terms.
               </p>
             </div>
           </div>

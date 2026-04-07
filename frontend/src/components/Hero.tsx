@@ -4,7 +4,7 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex flex-col items-center justify-center text-center px-6"
     >
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center" />
+      <div className="absolute inset-0 bg-[url('/hero.png')] bg-cover bg-center" />
       <div className="absolute inset-0 bg-gradient-to-b from-dark/70 via-dark/50 to-dark" />
 
       <div className="relative z-10 max-w-3xl">

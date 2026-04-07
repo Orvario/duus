@@ -35,8 +35,8 @@ export default function Story() {
         <div className="relative">
           <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-dark-light">
             <img
-              src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80"
-              alt="Interior of Kaffi Duus restaurant"
+              src="/dining-with-a-view.png"
+              alt="Dining room at Kaffi Duus with booths, bar, and windows overlooking the coast"
               className="w-full h-full object-cover"
             />
           </div>
