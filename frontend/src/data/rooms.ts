@@ -118,7 +118,7 @@ export const ROOMS: Room[] = [
       'Linens & towels',
       'Parking included',
     ],
-    images: ['/rooms/ocean-view-2.jpg', '/rooms/ocean-view-1.jpg', '/rooms/ocean-view-3.jpg'],
+    images: ['/rooms/ocean-twin-1.jpg', '/rooms/ocean-twin-2.jpg', '/rooms/ocean-twin-3.jpg'],
   },
   {
     slug: 'superior-ocean-view',
@@ -173,6 +173,6 @@ export const ROOMS: Room[] = [
       'Linens & towels',
       'Parking included',
     ],
-    images: ['/rooms/harbor-suite-2.jpg', '/rooms/harbor-suite-1.jpg', '/rooms/harbor-suite-3.jpg'],
+    images: ['/rooms/family-parking-1.jpg', '/rooms/family-parking-2.jpg', '/rooms/family-parking-3.jpg'],
   },
 ];

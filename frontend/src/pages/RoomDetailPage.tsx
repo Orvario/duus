@@ -38,7 +38,7 @@ export default function RoomDetailPage() {
           <div className="flex gap-3">
             {room.images.map((img, i) => (
               <button
-                key={img}
+                key={`${room.slug}-${i}`}
                 onClick={() => setActiveImage(i)}
                 className={`w-24 h-16 md:w-32 md:h-20 rounded-lg overflow-hidden cursor-pointer transition-all ${
                   i === activeImage
