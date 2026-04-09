@@ -46,9 +46,9 @@ export default function Hotel() {
           <div className="relative">
             <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-dark-light">
               <img
-                src="/rooms/hotel-exterior.jpg"
-                alt="Duus Hotel by the harbor"
-                className="w-full h-full object-cover"
+                src="/stay-by-harbor.png"
+                alt="Kaffi Duus and the small boat harbor in Keflavík, seen from above"
+                className="w-full h-full object-cover object-center"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 border border-gold/30 rounded-2xl -z-10" />
