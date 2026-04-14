@@ -22,7 +22,7 @@ export default function Gallery() {
         <p className="text-white/50">
           {t('gallery.follow')}{' '}
           <a
-            href="https://instagram.com/kaffiduus"
+            href="https://www.instagram.com/kaffiduus"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gold hover:text-gold-light transition-colors"
