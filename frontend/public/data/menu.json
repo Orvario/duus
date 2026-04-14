@@ -46,9 +46,9 @@
       "title": "Pasta",
       "note": "Allir pastaréttir eru bornir fram með hvítlaukbrauði og Parmesan osti. All pasta dishes are served with garlic bread and Parmesan cheese.",
       "items": [
-        { "name": "Humar- og rækjupasta", "description": "Steikt í hvítlauksmjöri með spínati og humarsósu. Lobster and shrimp pasta cooked in garlic butter with spinach.", "price": "5.200 kr" },
-        { "name": "Kjúklinga- og beikonpasta", "description": "Með spínati og rjómasósu. Chicken and bacon pasta with spinach and creamy sauce.", "price": "4.500 kr" },
-        { "name": "Sveppa- og beikonpasta", "description": "Í rjómalagaðri sólþurrkaðri tómatsósu. Mushroom and bacon pasta in creamy sun-dried tomato sauce.", "price": "4.450 kr" }
+        { "name": "Humar- og rækjupasta / Lobster and shrimp pasta", "description": "Steikt í hvítlauksmjöri með spínati og humarsósu. Lobster and shrimp pasta cooked in garlic butter with spinach.", "price": "5.200 kr" },
+        { "name": "Kjúklinga- og beikonpasta / Chicken and bacon pasta", "description": "Með spínati og rjómasósu. Chicken and bacon pasta with spinach and creamy sauce.", "price": "4.500 kr" },
+        { "name": "Sveppa- og beikonpasta / Mushroom and bacon pasta", "description": "Í rjómalagaðri sólþurrkaðri tómatsósu. Mushroom and bacon pasta in creamy sun-dried tomato sauce.", "price": "4.450 kr" }
       ]
     },
     {
