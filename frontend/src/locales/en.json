@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "title": "Kaffi Duus — Restaurant by the Harbor",
+    "description": "Kaffi Duus — fresh seafood and dining by the small boat harbor in Keflavík, Iceland. Hotel Duus rooms, harbor views, and reservations."
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "is": "Íslenska"
+  },
+  "nav": {
+    "home": "Home",
+    "story": "Our Story",
+    "menu": "Menu",
+    "hotel": "Hotel",
+    "gallery": "Gallery",
+    "reservations": "Reservations",
+    "bookTable": "Book a Table"
+  },
+  "hero": {
+    "welcome": "Welcome to Keflavík",
+    "tagline": "Where the fresh catch meets the harbor view. Experience authentic Icelandic dining with a modern twist.",
+    "viewMenu": "View Menu",
+    "bookTable": "Book a Table",
+    "scroll": "Scroll"
+  },
+  "story": {
+    "kicker": "Our Story",
+    "title": "Dining with a View Since 1997",
+    "p1": "Located by the picturesque small boat harbor in Keflavík, Kaffi Duus started as a small coffee house but has grown into one of the most popular restaurants in the area.",
+    "p2": "We pride ourselves on offering fresh seafood straight from the harbor, perfectly grilled meats, and our famous desserts. Whether you're stopping by for a quick lunch or a romantic dinner, the view over the ocean creates the perfect atmosphere.",
+    "statYears": "Years",
+    "statRating": "Rating",
+    "imageAlt": "Dining room at Kaffi Duus with booths, bar, and windows overlooking the coast"
+  },
+  "menuSection": {
+    "title": "Our Menu",
+    "subtitle": "Experience the taste of Iceland with our locally sourced ingredients and classic recipes.",
+    "orderNow": "Order Now",
+    "seeFull": "See Full Menu"
+  },
+  "gallery": {
+    "kicker": "Gallery",
+    "title": "A Visual Feast",
+    "follow": "Follow us on Instagram",
+    "alt1": "Seafood dish at Kaffi Duus",
+    "alt2": "Harbor view from the restaurant",
+    "alt3": "Interior dining area",
+    "alt4": "Fresh langoustine plate",
+    "alt5": "Dessert presentation",
+    "alt6": "Sunset view from Kaffi Duus"
+  },
+  "hotel": {
+    "kicker": "Duus Hotel",
+    "title": "Stay by the Harbor",
+    "p1": "Connected to Kaffi Duus restaurant, our boutique hotel offers the perfect base for exploring Iceland's Reykjanes peninsula. Fall asleep to the sound of the ocean and wake up to a freshly prepared breakfast downstairs.",
+    "p2": "Each room is designed with Scandinavian simplicity and Icelandic character — natural materials, warm lighting, and views that remind you exactly where you are.",
+    "viewRooms": "View Rooms",
+    "ourRooms": "Our Rooms",
+    "viewAllRooms": "View All Rooms",
+    "exteriorAlt": "Kaffi Duus and the small boat harbor in Keflavík, seen from above"
+  },
+  "roomsPage": {
+    "title": "Our Rooms",
+    "subtitle": "Boutique rooms connected to Kaffi Duus restaurant, right by the harbor in Keflavík.",
+    "back": "Back to home",
+    "amenitiesCount": "{{count}} amenities"
+  },
+  "roomDetail": {
+    "back": "All Rooms",
+    "amenitiesHeading": "Amenities",
+    "bookingRateHint": "Select dates in booking for nightly total",
+    "bookNow": "Book Now",
+    "call": "Call +354 421 7080",
+    "policy": "Rates, taxes, and cancellation rules are shown in the booking engine. Cancellations 48 hours or more before check-in are typically free on flexible rates; non-refundable rates have separate terms.",
+    "imageAlt": "{{name}} — photo {{num}}",
+    "thumbAlt": "{{name}} — thumbnail {{num}}"
+  },
+  "common": {
+    "guest": "guest",
+    "guests": "guests",
+    "logoAlt": "Kaffi Duus"
+  },
+  "reservation": {
+    "kicker": "Reservations",
+    "title": "Book a Table",
+    "subtitle": "Reserve your spot and enjoy a memorable dining experience by the harbor.",
+    "successTitle": "Reservation Received",
+    "successBody": "We'll confirm your booking shortly. See you soon!",
+    "name": "Full Name",
+    "namePh": "Your name",
+    "phone": "Phone",
+    "phonePh": "+354 …",
+    "date": "Date",
+    "time": "Time",
+    "timeSelect": "Select",
+    "guests": "Guests",
+    "guestsCall": "9+ (call us)",
+    "requests": "Special Requests",
+    "requestsPh": "Allergies, celebrations, seating preferences…",
+    "error": "Something went wrong. Please try again or call us at +354 421 7080.",
+    "sending": "Sending…",
+    "submit": "Reserve Table",
+    "emailSubject": "New table reservation — Kaffi Duus",
+    "emailFrom": "Kaffi Duus website"
+  },
+  "footer": {
+    "blurb": "By the small boat harbor in Keflavík. Fresh seafood, warm atmosphere, and ocean views since 1997.",
+    "hours": "Opening Hours",
+    "weekdays": "Monday — Thursday",
+    "weekend": "Friday — Saturday",
+    "sunday": "Sunday",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
+  "fullMenu": {
+    "loading": "Loading menu…",
+    "back": "Back to home",
+    "title": "Menu",
+    "subtitle": "Fresh from the harbor since 1997",
+    "drinksTitle": "Drinks",
+    "footnote": "Prices subject to change."
+  },
+  "rooms": {
+    "single-ocean-view": {
+      "name": "Single Ocean View",
+      "tagline": "Solo stay with an ocean outlook",
+      "description": "A single room facing the ocean—ideal when you are traveling alone and want a clear view of the coast from Hotel Duus.",
+      "details": "This room is set up for one guest with the amenities listed for our property, including a small kitchenette area (refrigerator, coffee maker, kettle), Wi-Fi, TV, and a balcony. City tax applies per night in addition to the room rate shown at booking.",
+      "price": "Live rates (EUR)",
+      "size": "Single",
+      "amenities": ["Ocean view", "Refrigerator", "Coffee maker", "Kettle", "Wi-Fi", "TV", "Balcony", "Private bathroom", "Hair dryer", "Linens & towels", "Parking included"]
+    },
+    "double-ocean-view": {
+      "name": "Double Room — Ocean View",
+      "tagline": "Double room overlooking the ocean",
+      "description": "A double room with an ocean view at Hotel Duus—well suited for couples or two guests who want the Atlantic outside the window.",
+      "details": "Standard and non-refundable rate options are available in our booking engine. The room includes the property amenities listed below. All room prices include 11% VAT; city tax is added per room per night at invoicing. Pets are not allowed.",
+      "price": "Live rates (EUR)",
+      "size": "Double",
+      "amenities": ["Ocean view", "Refrigerator", "Coffee maker", "Kettle", "Wi-Fi", "TV", "Balcony", "Sitting area", "Private bathroom", "Toiletries & hair dryer", "Linens & towels", "Parking included"]
+    },
+    "double-parking-view": {
+      "name": "Double Room — Parking View",
+      "tagline": "Quiet double room with a parking-side outlook",
+      "description": "A double room with a parking-view orientation—another way to stay at Hotel Duus when you prefer this layout.",
+      "details": "Features align with our other double rooms (kitchenette basics, Wi-Fi, balcony, and more). Check live availability and EUR rates for your dates in the booking portal.",
+      "price": "Live rates (EUR)",
+      "size": "Double",
+      "amenities": ["Parking view", "Refrigerator", "Coffee maker", "Kettle", "Wi-Fi", "TV", "Balcony", "Sitting area", "Private bathroom", "Toiletries & hair dryer", "Linens & towels", "Parking included"]
+    },
+    "double-twin-ocean-view": {
+      "name": "Double/Twin — Ocean View",
+      "tagline": "Ocean view as a double or twin",
+      "description": "Configure as a double or twin in our ocean-view category—flexible for two travelers who want separate beds or one bed.",
+      "details": "Select dates and guest count in the booking engine to see which rate plans apply. The same core in-room facilities apply as for our other ocean-view doubles.",
+      "price": "Live rates (EUR)",
+      "size": "Double or twin",
+      "amenities": ["Ocean view", "Double or twin setup", "Refrigerator", "Coffee maker", "Kettle", "Wi-Fi", "TV", "Balcony", "Private bathroom", "Toiletries & hair dryer", "Linens & towels", "Parking included"]
+    },
+    "superior-ocean-view": {
+      "name": "Superior Ocean View",
+      "tagline": "Stepped-up ocean-view stay",
+      "description": "Our superior ocean-view category offers an elevated take on the coastal outlook, with the same trusted Hotel Duus in-room facilities.",
+      "details": "Promotional and non-refundable options may appear for selected dates in the booking engine (for example winter promotions). Always confirm rate rules before you complete a reservation.",
+      "price": "Live rates (EUR)",
+      "size": "Superior",
+      "amenities": ["Ocean view", "Refrigerator", "Coffee maker", "Kettle", "Wi-Fi", "TV", "Balcony", "Sitting area", "Private bathroom", "Toiletries & hair dryer", "Linens & towels", "Parking included"]
+    },
+    "family-parking-view": {
+      "name": "Family Room — Parking View",
+      "tagline": "Space for the whole family",
+      "description": "A family-oriented room with a parking-view side of the property—ideal when you need more space for adults and children together.",
+      "details": "Guest limits and extra-bed rules for children apply as set by the hotel in the booking flow. Full payment and cancellation rules depend on the rate plan you choose (standard vs non-refundable).",
+      "price": "Live rates (EUR)",
+      "size": "Family",
+      "amenities": ["Parking view", "Family layout", "Refrigerator", "Coffee maker", "Kettle", "Wi-Fi", "TV", "Balcony", "Sitting area", "Private bathroom", "Toiletries & hair dryer", "Linens & towels", "Parking included"]
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "title": "Kaffi Duus — veitingastaður við höfnina",
+    "description": "Kaffi Duus — ferskur sjávarréttur og veitingar við litlu bátahöfnina í Keflavík. Herbergi á Hótel Duus, útsýni og pöntun."
+  },
+  "language": {
+    "label": "Tungumál",
+    "en": "English",
+    "is": "Íslenska"
+  },
+  "nav": {
+    "home": "Heim",
+    "story": "Sagan okkar",
+    "menu": "Matseðill",
+    "hotel": "Hótel",
+    "gallery": "Myndasafn",
+    "reservations": "Pantanir",
+    "bookTable": "Panta borð"
+  },
+  "hero": {
+    "welcome": "Velkomin til Keflavíkur",
+    "tagline": "Þar sem ferskur afli mætir útsýni yfir höfnina. Upplifðu íslenskan mat í nútímalegu umhverfi.",
+    "viewMenu": "Skoða matseðil",
+    "bookTable": "Panta borð",
+    "scroll": "Skruna"
+  },
+  "story": {
+    "kicker": "Sagan okkar",
+    "title": "Með útsýni síðan 1997",
+    "p1": "Við litlu bátahöfnina í Keflavík hófst Kaffi Duus sem lítil kaffistofa en hefur orðið einn vinsælasti veitingastaður svæðisins.",
+    "p2": "Við erum stolt af ferskum sjávarréttum beint úr höfninni, fullkomnu grilluðu kjöti og frægum eftirréttum. Hvort sem þú kemur í hádegi eða kvöldverð skapar útsýnið yfir sjóinn rétta andrúmsloftið.",
+    "statYears": "Ár",
+    "statRating": "Einkunn",
+    "imageAlt": "Veitingasalur í Kaffi Duus með sætum, bar og gluggum með útsýni að ströndinni"
+  },
+  "menuSection": {
+    "title": "Matseðillinn okkar",
+    "subtitle": "Smakkaðu Ísland með fersku hráefni og klassískum uppskriftum.",
+    "orderNow": "Panta núna",
+    "seeFull": "Skoða allan matseðil"
+  },
+  "gallery": {
+    "kicker": "Myndasafn",
+    "title": "Sjónarhorn",
+    "follow": "Fylgstu með okkur á Instagram",
+    "alt1": "Sjávarréttur hjá Kaffi Duus",
+    "alt2": "Útsýni úr veitingastaðnum yfir höfnina",
+    "alt3": "Innanhúss í veitingasal",
+    "alt4": "Ferskur humar á disk",
+    "alt5": "Eftirréttur",
+    "alt6": "Sólarlag frá Kaffi Duus"
+  },
+  "hotel": {
+    "kicker": "Hótel Duus",
+    "title": "Gistu við höfnina",
+    "p1": "Tengt veitingastaðnum Kaffi Duus býður lítil hótelgisting okkar upp á góðan grunn til að skoða Reykjanes. Sofðu við brimburð og byrjaðu daginn með morgunverði neðst í húsinu.",
+    "p2": "Öll herbergin eru hönnð með einföldu skandinavísku sniði og íslenskum karakter — náttúruleg efni, hlý lýsing og útsýni sem minnir þig á hvar þú ert.",
+    "viewRooms": "Skoða herbergi",
+    "ourRooms": "Herbergin okkar",
+    "viewAllRooms": "Skoða öll herbergi",
+    "exteriorAlt": "Kaffi Duus og litla bátahöfnin í Keflavík séð ofan frá"
+  },
+  "roomsPage": {
+    "title": "Herbergin okkar",
+    "subtitle": "Herbergi tengd veitingastaðnum Kaffi Duus, rétt við höfnina í Keflavík.",
+    "back": "Til baka á forsíðu",
+    "amenitiesCount": "{{count}} þægindi"
+  },
+  "roomDetail": {
+    "back": "Öll herbergi",
+    "amenitiesHeading": "Þægindi",
+    "bookingRateHint": "Veldu dagsetningar í bókunarkerfinu fyrir næturverð",
+    "bookNow": "Bóka núna",
+    "call": "Hringja í +354 421 7080",
+    "policy": "Verð, skattar og afpöntunarreglur koma fram í bókunarkerfinu. Afpantanir 48 klukkustundum eða meira fyrir innritun eru venjulega án gjald á sveigjanlegum verðum; óendurkræf verð fylgja öðrum skilmálum.",
+    "imageAlt": "{{name}} — mynd {{num}}",
+    "thumbAlt": "{{name}} — smámynd {{num}}"
+  },
+  "common": {
+    "guest": "gestur",
+    "guests": "gestir",
+    "logoAlt": "Kaffi Duus"
+  },
+  "reservation": {
+    "kicker": "Pantanir",
+    "title": "Panta borð",
+    "subtitle": "Tryggðu þér pláss og njóttu veitinga við höfnina.",
+    "successTitle": "Pöntun móttekin",
+    "successBody": "Við staðfestum bráðum. Sjáumst fljótlega!",
+    "name": "Fullt nafn",
+    "namePh": "Nafn þitt",
+    "phone": "Sími",
+    "phonePh": "+354 …",
+    "date": "Dagsetning",
+    "time": "Tími",
+    "timeSelect": "Veldu",
+    "guests": "Gestir",
+    "guestsCall": "9+ (hringdu í okkur)",
+    "requests": "Sérstakar óskir",
+    "requestsPh": "Ofnæmi, tilefni, sætisóskir…",
+    "error": "Eitthvað fór úrskeiðis. Reyndu aftur eða hringdu í +354 421 7080.",
+    "sending": "Sendi…",
+    "submit": "Senda pöntun",
+    "emailSubject": "Ný borðapöntun — Kaffi Duus",
+    "emailFrom": "Vefsíða Kaffi Duus"
+  },
+  "footer": {
+    "blurb": "Við litlu bátahöfnina í Keflavík. Ferskur sjávarréttur, hlýtt andrúmsloft og útsýni yfir sjóinn síðan 1997.",
+    "hours": "Opnunartími",
+    "weekdays": "Mánudagur — fimmtudagur",
+    "weekend": "Föstudagur — laugardagur",
+    "sunday": "Sunnudagur",
+    "contact": "Hafa samband",
+    "rights": "Öll réttindi áskilin."
+  },
+  "fullMenu": {
+    "loading": "Hleð matseðli…",
+    "back": "Til baka á forsíðu",
+    "title": "Matseðill",
+    "subtitle": "Ferskt úr höfninni síðan 1997",
+    "drinksTitle": "Drykkir",
+    "footnote": "Verð geta breyst."
+  },
+  "rooms": {
+    "single-ocean-view": {
+      "name": "Einstök herbergi — sjávarsýn",
+      "tagline": "Einangursdvöl með útsýni yfir sjóinn",
+      "description": "Einstök herbergi með sjávarsýn — hentugt þegar þú ferðast einn og vilt skýrt útsýni að ströndinni á Hótel Duus.",
+      "details": "Herbergið er ætlað einum gesti með þægindum eins og lýst er fyrir gististaðinn, þar á meðal litlu eldhúskrók (ísskápur, kaffivél, ketill), Wi-Fi, sjónvarp og svalir. Borga þarf borgaraskatt á nótt við innheimtu auk herbergisverðs sem birtist í bókun.",
+      "price": "Verð í rauntíma (EUR)",
+      "size": "Einstök",
+      "amenities": ["Sjávarsýn", "Ísskápur", "Kaffivél", "Vatnsketi", "Wi-Fi", "Sjónvarp", "Svalir", "Einkabaðherbergi", "Hárþurrkari", "Rúmföt og handklæði", "Bílastæði innifalin"]
+    },
+    "double-ocean-view": {
+      "name": "Tveggja manna herbergi — sjávarsýn",
+      "tagline": "Tveggja manna herbergi með útsýni yfir Atlantshafið",
+      "description": "Tveggja manna herbergi með sjávarsýn á Hótel Duus — hentar pörum eða tveimur gestum sem vilja útsýni yfir sjóinn.",
+      "details": "Almenn og óendurkræf verð fást í bókunarkerfinu. Herbergið fylgir þægindalýsingunni hér að neðan. Öll herbergisverð innihalda 11% VSK; borgaraskattur bætist við á reikning. Gæludýr eru ekki leyfð.",
+      "price": "Verð í rauntíma (EUR)",
+      "size": "Tveggja manna",
+      "amenities": ["Sjávarsýn", "Ísskápur", "Kaffivél", "Vatnsketi", "Wi-Fi", "Sjónvarp", "Svalir", "Setjuhólf", "Einkabaðherbergi", "Snyrtivörur og hárþurrkari", "Rúmföt og handklæði", "Bílastæði innifalin"]
+    },
+    "double-parking-view": {
+      "name": "Tveggja manna herbergi — útsýni að bílastæðum",
+      "tagline": "Kyrrlátt tveggja manna herbergi með útsýni að bílastæðum",
+      "description": "Tveggja manna herbergi með útsýni að bílastæðum — annar kostur á Hótel Duus þegar þú kýst þetta skipulag.",
+      "details": "Þægindi samsvara öðrum tveggja manna herbergjum (eldhúskapur, Wi-Fi, svalir og fleira). Athugaðu lausnleika og EUR-verð fyrir dagsetningar þínar í bókuninni.",
+      "price": "Verð í rauntíma (EUR)",
+      "size": "Tveggja manna",
+      "amenities": ["Útsýni að bílastæðum", "Ísskápur", "Kaffivél", "Vatnsketi", "Wi-Fi", "Sjónvarp", "Svalir", "Setjuhólf", "Einkabaðherbergi", "Snyrtivörur og hárþurrkari", "Rúmföt og handklæði", "Bílastæði innifalin"]
+    },
+    "double-twin-ocean-view": {
+      "name": "Tveggja manna eða tveir einbreiðir — sjávarsýn",
+      "tagline": "Sjávarsýn sem tvíbreitt eða tveir einbreiðir",
+      "description": "Hægt að setja upp sem tvíbreitt eða tvo einbreiða í flokknum með sjávarsýn — sveigjanlegt fyrir tvo sem vilja aðskilin rúm eða eitt.",
+      "details": "Veldu dagsetningar og fjölda gesta í bókunarkerfinu til að sjá hvaða verðáætlun gildir. Sömu kjarnanþægindi og í öðrum tveggja manna herbergjum með sjávarsýn.",
+      "price": "Verð í rauntíma (EUR)",
+      "size": "Tvíbreitt eða tveir einbreiðir",
+      "amenities": ["Sjávarsýn", "Tvíbreitt eða tveir einbreiðir", "Ísskápur", "Kaffivél", "Vatnsketi", "Wi-Fi", "Sjónvarp", "Svalir", "Einkabaðherbergi", "Snyrtivörur og hárþurrkari", "Rúmföt og handklæði", "Bílastæði innifalin"]
+    },
+    "superior-ocean-view": {
+      "name": "Úrvalsherbergi — sjávarsýn",
+      "tagline": "Efri stig sjávarútsýnis",
+      "description": "Úrvalsflokkur með sjávarsýn býður upp á aukin viðmót að ströndinni, með sömu traustu þægindum Hótel Duus.",
+      "details": "Kynningar- og óendurkræf verð kunna að birtast fyrir valdar dagsetningar (t.d. vetrartilboð). Staðfestu alltaf skilmála áður en þú lýkur bókun.",
+      "price": "Verð í rauntíma (EUR)",
+      "size": "Úrvals",
+      "amenities": ["Sjávarsýn", "Ísskápur", "Kaffivél", "Vatnsketi", "Wi-Fi", "Sjónvarp", "Svalir", "Setjuhólf", "Einkabaðherbergi", "Snyrtivörur og hárþurrkari", "Rúmföt og handklæði", "Bílastæði innifalin"]
+    },
+    "family-parking-view": {
+      "name": "Fjölskylduherbergi — útsýni að bílastæðum",
+      "tagline": "Rúm fyrir alla fjölskylduna",
+      "description": "Herbergi ætlað fjölskyldum með útsýni að bílastæðum — hentugt þegar þú þarft meira pláss fyrir fullorðna og börn.",
+      "details": "Takmörk á fjölda gesta og reglur um aukarúm fyrir börn gilda samkvæmt stillingum hótelsins í bókunarferlinu. Greiðslu- og afpöntunarskilmálar ráðast af því verðáætlun sem valin er (almenn á móti óendurkræfri).",
+      "price": "Verð í rauntíma (EUR)",
+      "size": "Fjölskylda",
+      "amenities": ["Útsýni að bílastæðum", "Fjölskyldulúgan", "Ísskápur", "Kaffivél", "Vatnsketi", "Wi-Fi", "Sjónvarp", "Svalir", "Setjuhólf", "Einkabaðherbergi", "Snyrtivörur og hárþurrkari", "Rúmföt og handklæði", "Bílastæði innifalin"]
+    }
+  }
+}

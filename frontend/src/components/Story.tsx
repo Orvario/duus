@@ -1,32 +1,29 @@
-const STATS = [
-  { value: '25+', label: 'Years' },
-  { value: '4.8', label: 'Rating' },
+import { useTranslation } from 'react-i18next';
+
+const STAT_VALUES = [
+  { value: '25+', labelKey: 'statYears' as const },
+  { value: '4.8', labelKey: 'statRating' as const },
 ];
 
 export default function Story() {
+  const { t } = useTranslation();
+
   return (
     <section id="story" className="py-24 md:py-32 px-6">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div>
-          <p className="text-gold tracking-[0.3em] uppercase text-xs mb-4">Our Story</p>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Dining with a View Since 1997
-          </h2>
-          <p className="text-white/60 leading-relaxed mb-4">
-            Located by the picturesque small boat harbor in Keflavík, Kaffi Duus started as a
-            small coffee house but has grown into one of the most popular restaurants in the area.
-          </p>
-          <p className="text-white/60 leading-relaxed mb-8">
-            We pride ourselves on offering fresh seafood straight from the harbor, perfectly
-            grilled meats, and our famous desserts. Whether you're stopping by for a quick
-            lunch or a romantic dinner, the view over the ocean creates the perfect atmosphere.
-          </p>
+          <p className="text-gold tracking-[0.3em] uppercase text-xs mb-4">{t('story.kicker')}</p>
+          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6 leading-tight">{t('story.title')}</h2>
+          <p className="text-white/60 leading-relaxed mb-4">{t('story.p1')}</p>
+          <p className="text-white/60 leading-relaxed mb-8">{t('story.p2')}</p>
 
           <div className="flex gap-12">
-            {STATS.map((stat) => (
-              <div key={stat.label}>
+            {STAT_VALUES.map((stat) => (
+              <div key={stat.labelKey}>
                 <div className="text-4xl font-serif font-bold text-gold">{stat.value}</div>
-                <div className="text-sm text-white/50 mt-1 tracking-wide uppercase">{stat.label}</div>
+                <div className="text-sm text-white/50 mt-1 tracking-wide uppercase">
+                  {t(`story.${stat.labelKey}`)}
+                </div>
               </div>
             ))}
           </div>
@@ -36,7 +33,7 @@ export default function Story() {
           <div className="aspect-[4/5] rounded-2xl overflow-hidden bg-dark-light">
             <img
               src="/dining-with-a-view.png"
-              alt="Dining room at Kaffi Duus with booths, bar, and windows overlooking the coast"
+              alt={t('story.imageAlt')}
               className="w-full h-full object-cover"
             />
           </div>
