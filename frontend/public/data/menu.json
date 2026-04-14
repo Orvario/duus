@@ -39,7 +39,7 @@
         { "name": "Djúpsteiktur fiskur", "description": "Með salati, frönskum og heimagerðri tartarsósu. Fish and chips with salad, fries and homemade tartar sauce.", "price": "5.250 kr" },
         { "name": "Fiskur dagsins", "description": "Spyrjið þjóninn. Með grænmeti, kartöflum, rækum og rjómalagaðri sólþurrkaðri tómatsósu. Fish of the day (ask the waiter) with vegetables, potatoes, shrimps and creamy sun-dried tomato sauce.", "price": "5.250 kr" },
         { "name": "Fiskitríó að hætti Duus", "description": "Með þremur tegundum af fiski, ásamt rækjum, á tígnarlegum tréplatta með kartöflum, grænmeti og sósu. Fish Trio á la Duus with three types of fish, shrimps, served on a wooden platter with potatoes, vegetables and sauce.", "price": "6.100 kr" },
-        { "name": "Kóstakóngurinn", "description": "Einstakur platti með fjórum tegundum af fiski eldaður með brennandi ástriki og nákvæmni. The King of the Ocean — 4 types of fish with vegetables, potatoes, shrimps and two kinds of sauces.", "price": "6.050–6.250 kr / pers" }
+        { "name": "Kvótakóngurinn / The King of the Ocean", "description": "Einstakur platti með fjórar tegundir af fiski eldaðir með brennandi ástríðu og nákvæmni, borið fram með steiktu grænmeti, kartöflum, rækjum og tveimur tegundum af sósum. The King of the Ocean. A unique platter with 4 types of fish, cooked with burning passion and great precision. Served with vegetables, potatoes, shrimps and two kinds of sauces.", "price": "3–6 pers: 6.250 kr · 7–10 pers: 6.150 kr · 11+ pers: 6.050 kr / pers" }
       ]
     },
     {
@@ -55,8 +55,8 @@
       "title": "Kjöt / Meat",
       "items": [
         { "name": "Kjötplatti", "description": "Lambakótílettur, Teriyaki BBQ ríf og nautasteik með kartöflum, brokkolíni, maísströng og béarnaisesósu. Meat Platter with Lamb chops, Teriyaki BBQ ribs and beef steak. Min. 2 pers.", "price": "7.850 kr / pers" },
-        { "name": "Grillúð nautasteik", "description": "Með stektum kartöflum, maísströng og béarnaisesósu. Grilled beef steak with potatoes, corn on the cob and Béarnaise sauce.", "price": "7.850 kr" },
-        { "name": "Grillaó lambafillet", "description": "Með kartöflugratín, brokkolíni, hunangsgúlrótum og béarnaisesósu. Grilled Lamb Fillet with potato gratin, broccoli, honey-glazed carrots and Béarnaise sauce.", "price": "7.850 kr" },
+        { "name": "Grilluð nautalund / Grilled beef tenderloin", "description": "Með stektum kartöflum, maísströng og béarnaisesósu. Grilled beef tenderloin with potatoes, corn on the cob and Béarnaise sauce.", "price": "7.850 kr" },
+        { "name": "Grillað lambafillet / Grilled lamb fillet", "description": "Með kartöflugratín, brokkolíni, hunangsgúlrótum og béarnaisesósu. Grilled lamb fillet with potato gratin, broccoli, honey-glazed carrots and Béarnaise sauce.", "price": "7.850 kr" },
         { "name": "BBQ svínaríf", "description": "Með sveita frönskum og gúrkusalati. BBQ pork ribs with country fries and cucumber salad.", "price": "6.200 kr" },
         { "name": "Grillaðar lambakótílettur", "description": "Með smaleki, brokkolíni, hunangsgúlrótum og brúnsósu. Grilled lamb chops with roasted baby potatoes, broccoli, honey-glazed carrots and brown sauce.", "price": "6.300 kr" },
         { "name": "Teriyaki marineruð hrefna", "description": "Með stektri papríku, sveppum, lauk, sætum frönskum og brúnsósu. Teriyaki marinated minke whale with fried mushrooms, paprika, onions, sweet fries and brown sauce.", "price": "6.600 kr" },

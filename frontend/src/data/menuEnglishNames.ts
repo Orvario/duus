@@ -27,12 +27,9 @@ export const MENU_NAME_EN: Record<string, string> = {
   'Djúpsteiktur fiskur': 'Deep-fried fish',
   'Fiskur dagsins': 'Fish of the day',
   'Fiskitríó að hætti Duus': 'Fish trio Duus style',
-  Kóstakóngurinn: 'King of the Ocean',
 
   // Meat
   Kjötplatti: 'Meat platter',
-  'Grillúð nautasteik': 'Grilled beef steak',
-  'Grillaó lambafillet': 'Grilled lamb fillet',
   'BBQ svínaríf': 'BBQ pork ribs',
   'Grillaðar lambakótílettur': 'Grilled lamb chops',
   'Teriyaki marineruð hrefna': 'Teriyaki marinated minke whale',
