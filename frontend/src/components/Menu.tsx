@@ -1,7 +1,8 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { MENU_PREVIEW_BY_LANG, menuPreviewLang, type PreviewCategory } from '../data/menuPreview';
+import { buildMenuPreviewCategories, menuPreviewLang, type PreviewCategory } from '../data/menuPreview';
+import type { RawMenuSection } from '../utils/menuLocale';
 
 function MenuInner({ categories }: { categories: PreviewCategory[] }) {
   const { t } = useTranslation();
@@ -30,8 +31,8 @@ function MenuInner({ categories }: { categories: PreviewCategory[] }) {
       </div>
 
       <div className="grid md:grid-cols-2 gap-8">
-        {activeCat?.items.map((item) => (
-          <div key={item.name} className="flex gap-5 group">
+        {activeCat?.items.map((item, ii) => (
+          <div key={`${active}-${ii}-${item.name}`} className="flex gap-5 group">
             <div className="w-28 h-28 flex-shrink-0 rounded-xl overflow-hidden bg-white/5">
               <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
             </div>
@@ -57,7 +58,31 @@ function MenuInner({ categories }: { categories: PreviewCategory[] }) {
 export default function Menu() {
   const { t, i18n } = useTranslation();
   const lang = menuPreviewLang(i18n.language);
-  const categories = useMemo(() => MENU_PREVIEW_BY_LANG[lang], [lang]);
+  const [menuFood, setMenuFood] = useState<RawMenuSection[] | undefined>(undefined);
+
+  useEffect(() => {
+    fetch('/data/menu.json')
+      .then((r) => r.json())
+      .then((d: { food: RawMenuSection[] }) => setMenuFood(d.food))
+      .catch(() => setMenuFood([]));
+  }, []);
+
+  const categories = useMemo(() => {
+    if (!menuFood || menuFood.length === 0) return [];
+    return buildMenuPreviewCategories(menuFood, lang);
+  }, [menuFood, lang]);
+
+  if (menuFood === undefined) {
+    return (
+      <section id="menu" className="py-24 md:py-32 px-6 bg-dark-light">
+        <div className="max-w-5xl mx-auto text-center mb-12">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">{t('menuSection.title')}</h2>
+          <p className="text-white/50 max-w-lg mx-auto">{t('menuSection.subtitle')}</p>
+        </div>
+        <div className="max-w-5xl mx-auto text-center text-white/40 py-8">{t('fullMenu.loading')}</div>
+      </section>
+    );
+  }
 
   if (categories.length === 0) return null;
 
