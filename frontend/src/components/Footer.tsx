@@ -16,16 +16,12 @@ export default function Footer() {
           <h4 className="text-sm text-white/70 uppercase tracking-wide mb-4">{t('footer.hours')}</h4>
           <div className="space-y-2 text-sm text-white/40">
             <div className="flex justify-between gap-4">
-              <span>{t('footer.weekdays')}</span>
-              <span>11:30 – 21:00</span>
+              <span>{t('footer.monday')}</span>
+              <span>{t('footer.closed')}</span>
             </div>
             <div className="flex justify-between gap-4">
-              <span>{t('footer.weekend')}</span>
-              <span>11:30 – 22:00</span>
-            </div>
-            <div className="flex justify-between gap-4">
-              <span>{t('footer.sunday')}</span>
-              <span>12:00 – 21:00</span>
+              <span>{t('footer.openDays')}</span>
+              <span>{t('footer.timeRange')}</span>
             </div>
           </div>
         </div>
@@ -40,8 +36,8 @@ export default function Footer() {
               </a>
             </p>
             <p>
-              <a href="mailto:kaffiduus@kaffiduus.is" className="hover:text-gold transition-colors">
-                kaffiduus@kaffiduus.is
+              <a href="mailto:duus@duus.is" className="hover:text-gold transition-colors">
+                duus@duus.is
               </a>
             </p>
           </div>

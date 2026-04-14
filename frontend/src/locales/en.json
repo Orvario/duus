@@ -28,7 +28,7 @@
     "kicker": "Our Story",
     "title": "Dining with a View Since 1997",
     "p1": "Located by the picturesque small boat harbor in Keflavík, Kaffi Duus started as a small coffee house but has grown into one of the most popular restaurants in the area.",
-    "p2": "We pride ourselves on offering fresh seafood straight from the harbor, perfectly grilled meats, and our famous desserts. Whether you're stopping by for a quick lunch or a romantic dinner, the view over the ocean creates the perfect atmosphere.",
+    "p2": "We pride ourselves on offering fresh seafood straight from the harbor, perfectly grilled meats, and our famous desserts. Whether you're here for a romantic dinner or a relaxed evening, the view over the ocean creates the perfect atmosphere.",
     "statYears": "Years",
     "statRating": "Rating",
     "imageAlt": "Dining room at Kaffi Duus with booths, bar, and windows overlooking the coast"
@@ -84,7 +84,7 @@
   "reservation": {
     "kicker": "Reservations",
     "title": "Book a Table",
-    "subtitle": "Reserve your spot and enjoy a memorable dining experience by the harbor.",
+    "subtitle": "Reserve your spot and enjoy a memorable dining experience by the harbor. Open Tuesday–Sunday, 17:00–22:00. Closed Mondays.",
     "successTitle": "Reservation Received",
     "successBody": "We'll confirm your booking shortly. See you soon!",
     "name": "Full Name",
@@ -99,17 +99,18 @@
     "requests": "Special Requests",
     "requestsPh": "Allergies, celebrations, seating preferences…",
     "error": "Something went wrong. Please try again or call us at +354 421 7080.",
+    "closedMonday": "We are closed on Mondays. Please choose another date.",
     "sending": "Sending…",
     "submit": "Reserve Table",
-    "emailSubject": "New table reservation — Kaffi Duus",
-    "emailFrom": "Kaffi Duus website"
+    "emailSubject": "New table reservation — Kaffi Duus"
   },
   "footer": {
     "blurb": "By the small boat harbor in Keflavík. Fresh seafood, warm atmosphere, and ocean views since 1997.",
     "hours": "Opening Hours",
-    "weekdays": "Monday — Thursday",
-    "weekend": "Friday — Saturday",
-    "sunday": "Sunday",
+    "monday": "Monday",
+    "closed": "Closed",
+    "openDays": "Tuesday — Sunday",
+    "timeRange": "17:00 – 22:00",
     "contact": "Contact",
     "rights": "All rights reserved."
   },

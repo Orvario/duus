@@ -1,29 +1,71 @@
 import { useState, type FormEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY || '';
+/** Table reservations are delivered to this inbox (FormSubmit). Override via Vite env if needed. */
+const RESERVATION_INBOX =
+  (import.meta.env.VITE_RESERVATION_EMAIL as string | undefined) ?? 'duus@duus.is';
+
+const FORMSUBMIT_AJAX = `https://formsubmit.co/ajax/${encodeURIComponent(RESERVATION_INBOX)}`;
+
+/** Evening service slots (Tuesday–Sunday, 17:00–22:00). */
+const RESERVATION_TIME_SLOTS: string[] = (() => {
+  const slots: string[] = [];
+  for (let h = 17; h <= 22; h++) {
+    const hh = h.toString().padStart(2, '0');
+    slots.push(`${hh}:00`);
+    if (h < 22) slots.push(`${hh}:30`);
+  }
+  return slots;
+})();
 
 export default function Reservation() {
   const { t } = useTranslation();
   const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+  const [mondayError, setMondayError] = useState(false);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setStatus('sending');
+    setMondayError(false);
+    setStatus('idle');
 
     const form = e.currentTarget;
-    const data = new FormData(form);
-    data.set('access_key', WEB3FORMS_KEY);
-    data.set('subject', t('reservation.emailSubject'));
-    data.set('from_name', t('reservation.emailFrom'));
+    const fd = new FormData(form);
+
+    const dateStr = String(fd.get('date') ?? '');
+    const picked = new Date(`${dateStr}T12:00:00`);
+    if (!Number.isNaN(picked.getTime()) && picked.getDay() === 1) {
+      setMondayError(true);
+      return;
+    }
+
+    setStatus('sending');
+
+    const payload = {
+      _subject: t('reservation.emailSubject'),
+      _template: 'table',
+      name: String(fd.get('name') ?? ''),
+      phone: String(fd.get('phone') ?? ''),
+      date: String(fd.get('date') ?? ''),
+      time: String(fd.get('time') ?? ''),
+      guests: String(fd.get('guests') ?? ''),
+      message: String(fd.get('message') ?? ''),
+      _honey: '',
+    };
 
     try {
-      const res = await fetch('https://api.web3forms.com/submit', {
+      const res = await fetch(FORMSUBMIT_AJAX, {
         method: 'POST',
-        body: data,
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(payload),
       });
 
-      if (res.ok) {
+      const data = (await res.json().catch(() => null)) as { success?: boolean | string } | null;
+      const ok = res.ok && (data?.success === true || data?.success === 'true');
+
+      if (ok) {
         setStatus('sent');
         form.reset();
       } else {
@@ -58,8 +100,6 @@ export default function Reservation() {
             onSubmit={handleSubmit}
             className="max-w-2xl mx-auto bg-dark border border-white/5 rounded-2xl p-6 md:p-10 space-y-6"
           >
-            <input type="hidden" name="access_key" value={WEB3FORMS_KEY} />
-
             <div className="grid sm:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm text-white/50 mb-1.5">{t('reservation.name')}</label>
@@ -91,6 +131,7 @@ export default function Reservation() {
                   name="date"
                   required
                   min={new Date().toISOString().split('T')[0]}
+                  onChange={() => setMondayError(false)}
                   className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/30 transition-colors"
                 />
               </div>
@@ -105,7 +146,7 @@ export default function Reservation() {
                   <option value="" disabled>
                     {t('reservation.timeSelect')}
                   </option>
-                  {['11:30', '12:00', '12:30', '13:00', '17:00', '17:30', '18:00', '18:30', '19:00', '19:30', '20:00', '20:30', '21:00'].map((time) => (
+                  {RESERVATION_TIME_SLOTS.map((time) => (
                     <option key={time} value={time}>
                       {time}
                     </option>
@@ -140,7 +181,11 @@ export default function Reservation() {
               />
             </div>
 
-            {status === 'error' && <p className="text-red-400 text-sm text-center">{t('reservation.error')}</p>}
+            {(mondayError || status === 'error') && (
+              <p className="text-red-400 text-sm text-center">
+                {mondayError ? t('reservation.closedMonday') : t('reservation.error')}
+              </p>
+            )}
 
             <button
               type="submit"

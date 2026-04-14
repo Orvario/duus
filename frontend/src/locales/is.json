@@ -28,7 +28,7 @@
     "kicker": "Sagan okkar",
     "title": "Með útsýni síðan 1997",
     "p1": "Við litlu bátahöfnina í Keflavík hófst Kaffi Duus sem lítil kaffistofa en hefur orðið einn vinsælasti veitingastaður svæðisins.",
-    "p2": "Við erum stolt af ferskum sjávarréttum beint úr höfninni, fullkomnu grilluðu kjöti og frægum eftirréttum. Hvort sem þú kemur í hádegi eða kvöldverð skapar útsýnið yfir sjóinn rétta andrúmsloftið.",
+    "p2": "Við erum stolt af ferskum sjávarréttum beint úr höfninni, fullkomnu grilluðu kjöti og frægum eftirréttum. Hvort sem þú kemur í rómantískt eða notalegt kvöldverð skapar útsýnið yfir sjóinn rétta andrúmsloftið.",
     "statYears": "Ár",
     "statRating": "Einkunn",
     "imageAlt": "Veitingasalur í Kaffi Duus með sætum, bar og gluggum með útsýni að ströndinni"
@@ -84,7 +84,7 @@
   "reservation": {
     "kicker": "Pantanir",
     "title": "Panta borð",
-    "subtitle": "Tryggðu þér pláss og njóttu veitinga við höfnina.",
+    "subtitle": "Tryggðu þér pláss og njóttu veitinga við höfnina. Opið þriðjudaga til sunnudaga, 17:00–22:00. Lokað á mánudögum.",
     "successTitle": "Pöntun móttekin",
     "successBody": "Við staðfestum bráðum. Sjáumst fljótlega!",
     "name": "Fullt nafn",
@@ -99,17 +99,18 @@
     "requests": "Sérstakar óskir",
     "requestsPh": "Ofnæmi, tilefni, sætisóskir…",
     "error": "Eitthvað fór úrskeiðis. Reyndu aftur eða hringdu í +354 421 7080.",
+    "closedMonday": "Við erum lokað á mánudögum. Veldu aðra dagsetningu.",
     "sending": "Sendi…",
     "submit": "Senda pöntun",
-    "emailSubject": "Ný borðapöntun — Kaffi Duus",
-    "emailFrom": "Vefsíða Kaffi Duus"
+    "emailSubject": "Ný borðapöntun — Kaffi Duus"
   },
   "footer": {
     "blurb": "Við litlu bátahöfnina í Keflavík. Ferskur sjávarréttur, hlýtt andrúmsloft og útsýni yfir sjóinn síðan 1997.",
     "hours": "Opnunartími",
-    "weekdays": "Mánudagur — fimmtudagur",
-    "weekend": "Föstudagur — laugardagur",
-    "sunday": "Sunnudagur",
+    "monday": "Mánudagur",
+    "closed": "Lokað",
+    "openDays": "Þriðjudagur — sunnudagur",
+    "timeRange": "17:00 – 22:00",
     "contact": "Hafa samband",
     "rights": "Öll réttindi áskilin."
   },
