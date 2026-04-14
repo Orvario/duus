@@ -1,13 +1,14 @@
 import { useTranslation } from 'react-i18next';
 
+/** Local assets only — restaurant, harbor, hotel, and menu photography. */
 const SOURCES = [
-  'https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?auto=format&fit=crop&w=600&q=80',
-  'https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=600&q=80',
-  'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80',
-  'https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=600&q=80',
-  'https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=600&q=80',
-  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80',
-];
+  '/menu/fish-soup.jpg',
+  '/stay-by-harbor.png',
+  '/dining-with-a-view.png',
+  '/menu/langoustine.jpg',
+  '/menu/skuffukaka.jpg',
+  '/hero.png',
+] as const;
 
 const ALT_KEYS = ['alt1', 'alt2', 'alt3', 'alt4', 'alt5', 'alt6'] as const;
 
@@ -35,7 +36,7 @@ export default function Gallery() {
       <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
         {SOURCES.map((src, i) => (
           <div
-            key={src}
+            key={`gallery-${i}`}
             className="aspect-square rounded-xl overflow-hidden bg-dark-light group cursor-pointer"
           >
             <img
