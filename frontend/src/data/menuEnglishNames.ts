@@ -4,7 +4,7 @@
  */
 export const MENU_NAME_EN: Record<string, string> = {
   // Forréttir
-  'Íslenski sjómannasnakkið': "The Icelandic Sailor's Bite",
+  'Íslenskt sjómannasnakk': "The Icelandic Sailor's Bite",
   'Íslensk kjötsúpa': 'Icelandic lamb soup',
   'Rjómalöguð humarsúpa': 'Creamy lobster soup',
   Brauðkarfa: 'Bread basket',
@@ -33,16 +33,16 @@ export const MENU_NAME_EN: Record<string, string> = {
   'BBQ svínaríf': 'BBQ pork ribs',
   'Grillaðar lambakótílettur': 'Grilled lamb chops',
   'Teriyaki marineruð hrefna': 'Teriyaki marinated minke whale',
-  'Grillúð ofnbökuð kjúklingabringa': 'Grilled oven-baked chicken breast',
+  'Grilluð ofnbökuð kjúklingabringa': 'Grilled oven-baked chicken breast',
 
   // Vegetarian
-  'Linsubaunapottréttir með grænmeti': 'Lentil stew with vegetables',
+  'Linsubaunapottréttur með grænmeti': 'Lentil stew with vegetables',
   'Svepparagú pasta': 'Mushroom ragù pasta',
 
   // Burgers & kids (shared names)
   'Bói Special': 'Bói Special',
   Ostborgari: 'Cheeseburger',
-  'Ofnabakalt kjúklingaleggir': 'Oven-baked chicken legs',
+  'Ofnbakaðir kjúklingaleggir': 'Oven-baked chicken legs',
   'Rjómalagað ostapasta með kjúkling': 'Creamy pasta with chicken',
 
   // Coffee
