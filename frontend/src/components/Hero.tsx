@@ -9,14 +9,14 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col items-center justify-center text-center px-6"
     >
       <div className="absolute inset-0 bg-[url('/hero.png')] bg-cover bg-center" />
-      <div className="absolute inset-0 bg-gradient-to-b from-dark/70 via-dark/50 to-dark" />
+      <div className="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/60 to-dark" />
 
-      <div className="relative z-10 max-w-3xl">
+      <div className="relative z-10 max-w-3xl text-white">
         <p className="text-gold tracking-[0.3em] uppercase text-sm mb-4 font-sans">{t('hero.welcome')}</p>
 
         <h1 className="font-serif text-6xl md:text-8xl font-bold mb-6 tracking-tight">Kaffi Duus</h1>
 
-        <p className="text-white/70 text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed">{t('hero.tagline')}</p>
+        <p className="text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed">{t('hero.tagline')}</p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
