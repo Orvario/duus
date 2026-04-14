@@ -5,7 +5,6 @@ import { buildMenuPreviewCategories, menuPreviewLang, type PreviewCategory } fro
 import type { RawMenuSection } from '../utils/menuLocale';
 
 function MenuInner({ categories }: { categories: PreviewCategory[] }) {
-  const { t } = useTranslation();
   const [active, setActive] = useState(categories[0]?.key ?? '');
   const activeCat = categories.find((c) => c.key === active);
 
@@ -32,7 +31,7 @@ function MenuInner({ categories }: { categories: PreviewCategory[] }) {
 
       <div className="grid md:grid-cols-2 gap-8">
         {activeCat?.items.map((item, ii) => (
-          <div key={`${active}-${ii}-${item.name}`} className="flex gap-5 group">
+          <div key={`${active}-${ii}-${item.name}`} className="flex gap-5">
             <div className="w-28 h-28 flex-shrink-0 rounded-xl overflow-hidden bg-white/5">
               <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
             </div>
@@ -43,10 +42,7 @@ function MenuInner({ categories }: { categories: PreviewCategory[] }) {
                   {item.price}
                 </span>
               </div>
-              <p className="text-sm text-white/40 leading-relaxed mb-3">{item.description}</p>
-              <span className="text-xs font-bold tracking-[0.15em] uppercase text-white/60 group-hover:text-gold transition-colors cursor-pointer">
-                {t('menuSection.orderNow')} &rsaquo;
-              </span>
+              <p className="text-sm text-white/40 leading-relaxed">{item.description}</p>
             </div>
           </div>
         ))}
