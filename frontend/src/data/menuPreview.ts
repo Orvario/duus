@@ -72,7 +72,7 @@ export function buildMenuPreviewCategories(food: RawMenuSection[], lang: MenuLan
     '/menu/char-tartare.jpg',
     '/menu/fish-soup.jpg',
     '/menu/langoustine.jpg',
-    '/menu/shrimp-cocktail.jpg',
+    '/menu/bread-basket.jpg',
   ]);
 
   const fromSea = toPreviewItems(subSection(fisk, [0, 1, 2, 5]), lang, [
@@ -87,17 +87,17 @@ export function buildMenuPreviewCategories(food: RawMenuSection[], lang: MenuLan
   const meatBurgers: PreviewItem[] = [
     { ...meatPart.items[0], image: '/menu/beef.jpg' },
     { ...meatPart.items[1], image: '/menu/lamb.jpg' },
-    { ...burgPart.items[0], image: '/menu/ribs.jpg' },
-    { ...burgPart.items[1], image: '/menu/chicken.jpg' },
+    { ...burgPart.items[0], image: '/menu/boi-burger.jpg' },
+    { ...burgPart.items[1], image: '/menu/cheeseburger.jpg' },
   ].map(({ name, description, price, image }) => ({ name, description, price, image }));
 
   const pastaLoc = localizeMenuSection(pasta, lang);
   const graenLoc = localizeMenuSection(subSection(graen, [0]), lang);
   const pastaVegan: PreviewItem[] = [
-    { ...pastaLoc.items[0], image: '/menu/fish-chips.jpg' },
-    { ...pastaLoc.items[1], image: '/menu/langoustine.jpg' },
-    { ...pastaLoc.items[2], image: '/menu/cod.jpg' },
-    { ...graenLoc.items[0], image: '/menu/arctic-char.jpg' },
+    { ...pastaLoc.items[0], image: '/menu/pasta-lobster.jpg' },
+    { ...pastaLoc.items[1], image: '/menu/pasta-chicken.jpg' },
+    { ...pastaLoc.items[2], image: '/menu/pasta-mushroom.jpg' },
+    { ...graenLoc.items[0], image: '/menu/lentil.jpg' },
   ].map(({ name, description, price, image }) => ({ name, description, price, image }));
 
   return [
