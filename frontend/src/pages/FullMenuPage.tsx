@@ -1,33 +1,26 @@
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitch from '../components/LanguageSwitch';
-
-interface MenuItem {
-  name: string;
-  description: string;
-  price: string;
-}
-
-interface MenuSection {
-  title: string;
-  note?: string;
-  items: MenuItem[];
-}
+import {
+  localizeMenuSection,
+  type MenuLang,
+  type RawMenuSection,
+} from '../utils/menuLocale';
 
 interface MenuData {
-  food: MenuSection[];
-  drinks: MenuSection[];
+  food: RawMenuSection[];
+  drinks: RawMenuSection[];
 }
 
-function MenuSectionBlock({ section }: { section: MenuSection }) {
+function MenuSectionBlock({ section, sectionKey }: { section: RawMenuSection; sectionKey: string }) {
   return (
     <div className="mb-12">
       <h3 className="font-serif text-2xl md:text-3xl font-bold text-gold mb-2">{section.title}</h3>
       {section.note && <p className="text-sm text-white/40 italic mb-4">{section.note}</p>}
       <div className="divide-y divide-white/5">
-        {section.items.map((item) => (
-          <div key={item.name} className="py-4 flex items-start justify-between gap-4">
+        {section.items.map((item, ii) => (
+          <div key={`${sectionKey}-${ii}`} className="py-4 flex items-start justify-between gap-4">
             <div className="min-w-0">
               <h4 className="text-base font-semibold text-white">{item.name}</h4>
               {item.description && (
@@ -45,8 +38,18 @@ function MenuSectionBlock({ section }: { section: MenuSection }) {
 }
 
 export default function FullMenuPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [menu, setMenu] = useState<MenuData | null>(null);
+
+  const lang: MenuLang = i18n.language.startsWith('is') ? 'is' : 'en';
+
+  const displayMenu = useMemo(() => {
+    if (!menu) return null;
+    return {
+      food: menu.food.map((s) => localizeMenuSection(s, lang)),
+      drinks: menu.drinks.map((s) => localizeMenuSection(s, lang)),
+    };
+  }, [menu, lang]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -56,7 +59,7 @@ export default function FullMenuPage() {
       .catch(() => {});
   }, []);
 
-  if (!menu) {
+  if (!menu || !displayMenu) {
     return (
       <div className="bg-dark text-white min-h-screen flex items-center justify-center">
         <div className="animate-pulse text-white/30">{t('fullMenu.loading')}</div>
@@ -87,8 +90,8 @@ export default function FullMenuPage() {
         </div>
 
         <section className="mb-20">
-          {menu.food.map((section) => (
-            <MenuSectionBlock key={section.title} section={section} />
+          {displayMenu.food.map((section, i) => (
+            <MenuSectionBlock key={`food-${i}`} sectionKey={`food-${i}`} section={section} />
           ))}
         </section>
 
@@ -97,8 +100,8 @@ export default function FullMenuPage() {
             <h2 className="font-serif text-4xl md:text-5xl font-bold mb-3">{t('fullMenu.drinksTitle')}</h2>
           </div>
 
-          {menu.drinks.map((section) => (
-            <MenuSectionBlock key={section.title} section={section} />
+          {displayMenu.drinks.map((section, i) => (
+            <MenuSectionBlock key={`drinks-${i}`} sectionKey={`drinks-${i}`} section={section} />
           ))}
         </div>
 
