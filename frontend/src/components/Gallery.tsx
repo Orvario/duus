@@ -2,11 +2,11 @@ import { useTranslation } from 'react-i18next';
 
 /** Local assets only — restaurant, harbor, hotel, and menu photography. */
 const SOURCES = [
-  '/menu/fish-soup.jpg',
+  '/rooms/ocean-view-1.jpg',
   '/stay-by-harbor.png',
   '/dining-with-a-view.png',
-  '/menu/langoustine.jpg',
-  '/menu/skuffukaka.jpg',
+  '/menu/fish-chips.jpg',
+  '/menu/lamb.jpg',
   '/hero.png',
 ] as const;
 
